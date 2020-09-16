@@ -1,0 +1,253 @@
+.header {
+  height: 87px;
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  opacity: 0.95;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+}
+.header .container__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.logo {
+  width: 164.31px;
+  height: 61px;
+}
+.header a {
+  padding: 10px;
+  color: #000;
+}
+.header a:hover {
+  color: #005092;
+}
+.white__button {
+  color: #005092;
+  background-color: white;
+  border-color: #005092;
+  box-shadow: 0px 4px 10px rgba(0, 80, 146, 0.25);
+  padding: 5px 10px;
+  margin: 10px;
+}
+.blue__button {
+  padding: 5px 10px;
+
+  color: white;
+  background: linear-gradient(90deg, #005092 0%, #00849c 68.23%);
+  box-shadow: 0px 4px 10px rgba(0, 80, 146, 0.25);
+}
+.blue__button:hover {
+  color: #005092;
+  background: white;
+  border-color: #005092;
+  box-shadow: 0px 4px 10px rgba(0, 80, 146, 0.25);
+}
+.white__button:hover {
+  color: white;
+  background: linear-gradient(90deg, #005092 0%, #00849c 68.23%);
+  box-shadow: 0px 4px 10px rgba(0, 80, 146, 0.25);
+}
+
+.description {
+  background: linear-gradient(
+    89.94deg,
+    #edfcff 41.05%,
+    rgba(237, 252, 255, 0.96) 53.95%,
+    rgba(237, 252, 255, 0.93) 63.32%,
+    rgba(237, 252, 255, 0) 99.95%
+  );
+  padding-bottom: 95px;
+}
+.description__img {
+  background: url(../Images/6408.png) no-repeat right;
+}
+.blueColor {
+  color: #005092;
+}
+.description__h1 {
+  font-size: 3.29rem;
+  padding-top: 110px;
+}
+.description__h3 {
+  padding: 25px 0;
+  font-size: 1.5rem;
+}
+.description__p {
+  font-size: 1.14rem;
+  padding: 25px 0 35px;
+}
+.description__line {
+  border: 2px solid #005092;
+  width: 180px;
+  border-radius: 5px;
+  background-color: #005092;
+}
+.description__h4,
+.description__form__legend {
+  padding: 10px 0;
+  font-weight: bold;
+  font-size: 1.43rem;
+  color: #005092;
+}
+.description__form__legend {
+  padding: 25px 0;
+}
+.description__li {
+  padding: 10px 0;
+
+  color: #fdbc00;
+}
+.description__li p {
+  color: black;
+}
+.description__form {
+  background-color: #c0e3ff;
+  padding: 20px 78px;
+  margin: 45px 0 95px;
+}
+.description__check {
+  padding: 30px 0 25px;
+}
+
+fieldset {
+  margin: 15px 0;
+  border: none;
+}
+.description__form__input {
+  width: 26.75%;
+
+  padding: 10px 20px;
+  background: #ffffff;
+  border: 1px solid #d7d7d7;
+  box-sizing: border-box;
+}
+.description__form__button {
+  width: 26.75%;
+}
+.description__form__flex {
+  display: flex;
+  justify-content: space-between;
+}
+.subscribe-field {
+  font-size: 0.86rem;
+}
+.benefits__h2 {
+  font-size: 2.57rem;
+  padding: 100px 10px 37px;
+}
+.benefits__h3 {
+  font-size: 1.29rem;
+}
+.benefits__img {
+  width: 107px;
+  height: 106px;
+}
+.benefits__imgs {
+  width: 100%;
+}
+.benefits__ul__top,
+.benefits__ul__bottom {
+  display: flex;
+}
+.benefits__span {
+  font-size: 1.14rem;
+  background: #00849c;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  color: white;
+  padding: 20px 45px 25px;
+  margin-bottom: 70px;
+}
+.benefits__span__bold {
+  font-weight: bold;
+}
+.benefits__p__bottom {
+  font-size: 1.71rem;
+  font-weight: bold;
+  color: #005092;
+  margin: 70px;
+}
+.description__form__legend,
+.benefits__h2,
+.benefits__h3,
+.benefits__span,
+.benefits__p__bottom {
+  text-align: center;
+}
+.benefits__ul__li {
+  padding: 50px;
+}
+.benefits__img {
+  width: 107px;
+  border: 3px solid rgba(0, 80, 146, 0.3);
+  box-sizing: border-box;
+}
+.benefits__imgs {
+  max-width: 70%;
+}
+
+.form__bottom {
+  background: #fdbc00;
+  opacity: 0.95;
+  padding-bottom: 50px;
+}
+.form__bottom__img {
+  background: url(../Images/glenn-carstens.png) no-repeat;
+}
+.description__form__legend {
+  margin: 50px 0 25px;
+}
+.links {
+  background: #333333;
+  color: white;
+}
+.links__flex {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0 40px;
+}
+.links__center__h {
+  font-weight: 500;
+}
+.links__center__line {
+  width: 60%;
+  border: 2px solid #fdbc00;
+  border-radius: 5px;
+  background-color: #fdbc00;
+  margin: 10px 0 20px;
+}
+.links__center__ul a {
+  padding: 10px;
+  display: flex;
+  color: white;
+}
+.links__center__ul {
+  padding-bottom: 30px;
+}
+.links__right__location {
+  padding: 15px 0;
+}
+.fab {
+  background: #333333;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  padding: 10px;
+  margin: 35px 10px 140px;
+  color: white;
+}
+.fa-facebook-f {
+  padding: 10px 12px;
+}
+.fa-vk {
+  padding: 10px 8px;
+}
+.fas {
+  color: #fdbc00;
+  background: #333333;
+}
+.fa-phone-alt {
+  padding-left: 20px;
+}
+.links__right__location__tel {
+  padding: 10px;
+}

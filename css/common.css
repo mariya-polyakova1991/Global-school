@@ -1,0 +1,48 @@
+.container {
+  max-width: 1920px;
+  width: 80%;
+  margin: 0 auto;
+}
+.container__top {
+  max-width: 1920px;
+  width: 90%;
+  margin: 0 auto;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+input:focus,
+textarea:focus,
+select:focus,
+button:focus {
+  outline: none;
+  outline-color: unset;
+}
+
+a:hover,
+button:hover {
+  transition: all 0.2s linear;
+}
+
+button,
+a {
+  cursor: pointer;
+}
+
+body {
+  font-size: 14px;
+  /* font-family: "Quicksand", sans-serif; */
+  background-color: ##e5e5e5;
+  background-size: cover;
+  background-position: top center;
+  color: black;
+}
+img {
+  max-width: 100%;
+}
+a {
+  text-decoration: none;
+}
