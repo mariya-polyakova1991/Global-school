@@ -48,7 +48,31 @@
   background: linear-gradient(90deg, #005092 0%, #00849c 68.23%);
   box-shadow: 0px 4px 10px rgba(0, 80, 146, 0.25);
 }
-
+.sidenav {
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 86px;
+  right: 0;
+  background-color: white;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+  z-index: 300;
+  padding-bottom: 20px;
+}
+.closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+.menu-open {
+  display: none;
+  color: #299fca;
+  padding: 20px;
+}
 .description {
   background: linear-gradient(
     89.94deg,
@@ -158,6 +182,34 @@ fieldset {
   padding: 20px 45px 25px;
   margin-bottom: 70px;
 }
+
+.benefits__span-back {
+  position: relative;
+  width: 570px;
+  margin: 0 auto;
+}
+.benefits__span-back::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: -33px;
+  border: 33px solid #00849c;
+  border-right-width: 0px;
+  border-right-color: transparent;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+}
+.benefits__span-back::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: -33px;
+  border: 33px solid #00849c;
+  border-left-width: 0;
+  border-left-color: transparent;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+}
 .benefits__span__bold {
   font-weight: bold;
 }
@@ -166,6 +218,9 @@ fieldset {
   font-weight: bold;
   color: #005092;
   margin: 70px;
+}
+.benefits__p {
+  width: 245px;
 }
 .description__form__legend,
 .benefits__h2,
@@ -182,6 +237,7 @@ fieldset {
   border: 3px solid rgba(0, 80, 146, 0.3);
   box-sizing: border-box;
 }
+
 .benefits__imgs {
   max-width: 70%;
 }
@@ -250,4 +306,30 @@ fieldset {
 }
 .links__right__location__tel {
   padding: 10px;
+}
+.fab:hover {
+  color: #fdbc00;
+  border: 2px solid #fdbc00;
+}
+.links__left__p a {
+  color: white;
+}
+.links__center__ul a:hover,
+.links__left__p a:hover {
+  color: #fdbc00;
+}
+.tel {
+  color: white;
+}
+.tel:hover {
+  color: #fdbc00;
+}
+.fa-bars {
+  color: #005092;
+  background-color: white;
+}
+.menu__li__burger {
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
 }

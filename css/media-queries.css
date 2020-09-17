@@ -8,7 +8,67 @@
   html {
     font-size: 12px;
   }
-  .header a {
+  .menu__li {
     display: none;
+  }
+  .menu-open {
+    display: block !important;
+  }
+
+  .benefits__span-back::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: -30px;
+    border: 30px solid #00849c;
+    border-right-width: 0px;
+    border-right-color: transparent;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+  }
+  .benefits__span-back::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: -30px;
+    border: 30px solid #00849c;
+    border-left-width: 0;
+    border-left-color: transparent;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+  }
+  .benefits__ul__top,
+  .benefits__ul__bottom {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 530px) {
+  .benefits__span-back {
+    position: relative;
+    width: 262px;
+    margin: 0 auto;
+  }
+  .benefits__span-back::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: -38px;
+    border: 38px solid #00849c;
+    border-right-width: 0px;
+    border-right-color: transparent;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+  }
+  .benefits__span-back::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: -38px;
+    border: 38px solid #00849c;
+    border-left-width: 0;
+    border-left-color: transparent;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
   }
 }

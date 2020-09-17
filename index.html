@@ -20,13 +20,36 @@
           <a href="index.html">
             <img class="logo" src="Images/logo.png" alt="logo"
           /></a>
-          <a href="index.html">Главная</a>
-          <a href="#">Наша команда</a>
-          <a href="#">Жизнь школы</a>
-          <a href="#">Обращение директора</a>
-          <a href="#">Как мы обучаем?</a>
+          <a class="menu__li" href="index.html">Главная</a>
+          <a class="menu__li" href="#">Наша команда</a>
+          <a class="menu__li" href="#">Жизнь школы</a>
+          <a class="menu__li" href="#">Обращение директора</a>
+          <a class="menu__li" href="#">Как мы обучаем?</a>
           <button class="white__button">Обратный звонок</button>
           <button class="blue__button">Оплатить обучение</button>
+
+          <!--================menu burger =================-->
+
+          <div id="mySidenav" class="sidenav">
+            <ul id="menu">
+              <li class="nav-item">
+                <a
+                  href="javascript:void(0)"
+                  class="closebtn"
+                  onclick="closeNav()"
+                  >&times;</a
+                >
+              </li>
+              <a class="menu__li__burger" href="index.html">Главная</a>
+              <a class="menu__li__burger" href="#">Наша команда</a>
+              <a class="menu__li__burger" href="#">Жизнь школы</a>
+              <a class="menu__li__burger" href="#">Обращение директора</a>
+              <a class="menu__li__burger" href="#">Как мы обучаем?</a>
+            </ul>
+          </div>
+          <span class="menu-open" onclick="openNav()"
+            ><i class="fas fa-bars"></i
+          ></span>
         </div>
       </div>
     </header>
@@ -227,10 +250,12 @@
               </div>
             </div>
           </div>
-          <div class="benefits__span">
-            Уже более
-            <span class="benefits__span__bold"> 1500 студентов</span> доверили
-            нам свое обучение!
+          <div class="benefits__span-back">
+            <div class="benefits__span">
+              Уже более
+              <span class="benefits__span__bold"> 1500 студентов</span> доверили
+              нам свое обучение!
+            </div>
           </div>
           <p class="benefits__p__bottom">Присоединяйтесь!</p>
         </div>
@@ -299,7 +324,9 @@
                 <a href="#"> <i class="fab fa-telegram-plane"></i></a>
                 <a href="#"> <i class="fab fa-facebook-f"></i></a>
               </div>
-              <div class="links__left__p">Политика конфиденциальности</div>
+              <div class="links__left__p">
+                <a href="#"> Политика конфиденциальности</a>
+              </div>
             </div>
             <div class="links__center">
               <div class="links__center__h">Меню</div>
@@ -325,7 +352,9 @@
                 </div>
                 <div class="links__right__location__tel">
                   <i class="fas fa-phone-alt"></i>
-                  +7 (961) 467-71-71
+                  <a class="tel" href="tel:+79614677171">
+                    +7 (961) 467-71-71
+                  </a>
                 </div>
               </div>
               <div class="links__right__location">
@@ -335,7 +364,9 @@
                 </div>
                 <div class="links__right__location__tel">
                   <i class="fas fa-phone-alt"></i>
-                  +7 (909) 759-47-27
+                  <a class="tel" href="tel:+79097594727">
+                    +7 (909) 759-47-27
+                  </a>
                 </div>
               </div>
               <div class="links__right__location">
@@ -345,7 +376,9 @@
                 </div>
                 <div class="links__right__location__tel">
                   <i class="fas fa-phone-alt"></i>
-                  +7 (962) 004-18-01
+                  <a class="tel" href="tel:+79620041801">
+                    +7 (962) 004-18-01
+                  </a>
                 </div>
               </div>
             </div>
@@ -353,5 +386,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/menu.js"></script>
   </body>
 </html>
