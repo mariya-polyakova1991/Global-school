@@ -1,0 +1,37 @@
+.speech__description p {
+  padding-top: 10px;
+}
+.speech__description span {
+  color: #005092;
+  font-weight: bold;
+}
+.speech__flex {
+  display: flex;
+  max-width: 1300px;
+  margin: 0 auto 10%;
+}
+.speech__description {
+  width: 55%;
+  padding-left: 20px;
+  padding-bottom: 5%;
+  margin: 0 auto;
+}
+.speech__img {
+  margin: 0 10px;
+  width: 35%;
+  text-align: center;
+}
+
+.technique__flex {
+  flex-direction: row-reverse;
+  display: flex;
+  margin: 0 auto 10%;
+
+  max-width: 1300px;
+}
+@media (max-width: 890px) {
+  .technique__flex {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}

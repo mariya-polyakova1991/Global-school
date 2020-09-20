@@ -11,6 +11,17 @@
   align-items: center;
   justify-content: space-around;
 }
+.container__top-flex {
+  margin: 10px;
+}
+.container__top-flex__menu {
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+}
+.container__top-flex__img {
+  width: 15%;
+}
 .logo {
   width: 164.31px;
   height: 61px;
@@ -28,11 +39,11 @@
   border-color: #005092;
   box-shadow: 0px 4px 10px rgba(0, 80, 146, 0.25);
   padding: 5px 10px;
-  margin: 10px;
+  margin-left: 10px;
 }
 .blue__button {
-  padding: 5px 10px;
-
+  padding: 10px 5px;
+  margin-left: 10px;
   color: white;
   background: linear-gradient(90deg, #005092 0%, #00849c 68.23%);
   box-shadow: 0px 4px 10px rgba(0, 80, 146, 0.25);
@@ -50,7 +61,7 @@
 }
 .sidenav {
   width: 0;
-  position: fixed;
+  position: absolute;
   z-index: 1;
   top: 86px;
   right: 0;
@@ -63,7 +74,7 @@
 }
 .closebtn {
   position: absolute;
-  top: 0;
+  top: 20px;
   right: 25px;
   font-size: 36px;
   margin-left: 50px;
@@ -72,6 +83,9 @@
   display: none;
   color: #299fca;
   padding: 20px;
+  position: absolute;
+  right: 0;
+  top: 3px;
 }
 .description {
   background: linear-gradient(
@@ -83,8 +97,13 @@
   );
   padding-bottom: 95px;
 }
+.description__flex-reverse {
+  display: flex;
+  flex-direction: column;
+}
 .description__img {
   background: url(../Images/6408.png) no-repeat right;
+  background-size: cover;
 }
 .blueColor {
   color: #005092;
@@ -135,7 +154,7 @@
 }
 
 fieldset {
-  margin: 15px 0;
+  padding: 15px 0;
   border: none;
 }
 .description__form__input {
@@ -185,7 +204,7 @@ fieldset {
 
 .benefits__span-back {
   position: relative;
-  width: 570px;
+  width: 592px;
   margin: 0 auto;
 }
 .benefits__span-back::after {
@@ -220,7 +239,7 @@ fieldset {
   margin: 70px;
 }
 .benefits__p {
-  width: 245px;
+  width: 100%;
 }
 .description__form__legend,
 .benefits__h2,
@@ -230,11 +249,13 @@ fieldset {
   text-align: center;
 }
 .benefits__ul__li {
-  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  padding: 50px 20px;
+  align-items: center;
 }
 .benefits__img {
   width: 107px;
-  border: 3px solid rgba(0, 80, 146, 0.3);
   box-sizing: border-box;
 }
 
@@ -249,6 +270,7 @@ fieldset {
 }
 .form__bottom__img {
   background: url(../Images/glenn-carstens.png) no-repeat;
+  background-size: cover;
 }
 .description__form__legend {
   margin: 50px 0 25px;
@@ -288,7 +310,7 @@ fieldset {
   border: 2px solid #ffffff;
   border-radius: 50%;
   padding: 10px;
-  margin: 35px 10px 140px;
+  margin: 35px 5px 140px;
   color: white;
 }
 .fa-facebook-f {
@@ -325,11 +347,48 @@ fieldset {
   color: #fdbc00;
 }
 .fa-bars {
+  font-size: 3rem;
   color: #005092;
+  background-color: white;
+}
+.fa-times {
+  display: none;
+  font-size: 3rem;
+  color: #005092;
+
   background-color: white;
 }
 .menu__li__burger {
   font-weight: bold;
   display: flex;
   justify-content: center;
+}
+.links__phone {
+  display: none;
+}
+.links__p-phone {
+  display: none;
+}
+.links__left__p-phone a {
+  color: #fdbc00;
+  padding-right: 10px;
+}
+.links__right__h,
+.links__center__h {
+  font-size: 1.43rem;
+}
+.links__flex__center {
+  display: flex;
+  width: 58%;
+  justify-content: space-between;
+}
+.close {
+  display: none !important;
+}
+.blackout {
+  background: rgba(0, 0, 0, 0.5) !important;
+  background-blend-mode: darken;
+}
+.container__backgroung {
+  background-color: #edfcff;
 }

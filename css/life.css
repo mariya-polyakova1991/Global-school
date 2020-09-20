@@ -1,0 +1,49 @@
+.life__h2 {
+  font-size: 2.57rem;
+  padding: 100px 10px 5px;
+  text-align: center;
+  font-weight: 500;
+}
+.life__line {
+  border: 2px solid #005092;
+  width: 87px;
+  border-radius: 5px;
+  background-color: #005092;
+  margin: 0 auto 40px;
+}
+.life__p {
+  font-weight: 1.14rem;
+  text-align: center;
+  font-weight: 700;
+  max-width: 429px;
+  margin: 0 auto;
+  padding: 10px;
+}
+.life__img__number {
+  background: url(../Images/svg/Polygon7.svg) no-repeat 50% 50%;
+  background-size: 106px;
+  padding: 40px;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #00849c;
+}
+.life__ul__li {
+  text-align: center;
+  position: relative;
+  margin: 40px;
+}
+.life__ul__top,
+.life__ul__bottom {
+  display: flex;
+  justify-content: center;
+}
+.breadcrumbs {
+  margin: 20px;
+}
+.home__page {
+  color: black;
+  font-weight: bold;
+}
+.active__page {
+  color: gray;
+}

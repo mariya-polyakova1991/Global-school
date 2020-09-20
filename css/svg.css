@@ -1,0 +1,181 @@
+.block {
+  position: absolute;
+  top: 31%;
+  left: 1%;
+  width: 38px;
+  height: 38px;
+}
+
+.block1 {
+  position: absolute;
+  top: 76%;
+  right: 30%;
+  width: 36px;
+  height: 36px;
+}
+.block2 {
+  position: absolute;
+  width: 2px;
+  height: 62px;
+  left: 5%;
+  top: 84%;
+
+  background: rgba(0, 132, 156, 0.2);
+  transform: matrix(-0.73, 0.68, 0.68, 0.73, 0, 0);
+}
+.block3 {
+  position: absolute;
+  width: 2px;
+  height: 62px;
+  left: 3.7%;
+  top: 83%;
+  background: rgba(0, 132, 156, 0.2);
+  transform: matrix(-0.73, 0.68, 0.68, 0.73, 0, 0);
+}
+.block4 {
+  position: absolute;
+  width: 2px;
+  height: 62px;
+  left: 3.4%;
+  top: 85%;
+
+  background: rgba(0, 132, 156, 0.2);
+  transform: matrix(-0.73, 0.68, 0.68, 0.73, 0, 0);
+}
+.block5 {
+  position: absolute;
+  top: 110%;
+  left: 0.5%;
+  width: 5rem;
+  height: 5rem;
+}
+.benefits {
+  position: relative;
+}
+.container__overflow {
+  position: relative;
+  overflow: hidden;
+}
+.block6 {
+  position: absolute;
+  top: -11%;
+  left: -2%;
+}
+.block7 {
+  position: absolute;
+  top: -6.5%;
+  right: 4%;
+  width: 8rem;
+}
+.block8 {
+  position: absolute;
+  top: -27.5%;
+  right: 6%;
+  width: 8rem;
+}
+.block9 {
+  position: absolute;
+  top: -35%;
+  left: 1%;
+  width: 10rem;
+}
+.form__bottom {
+  position: relative;
+}
+.block10 {
+  position: absolute;
+  top: 46%;
+  left: 6%;
+  width: 4rem;
+}
+.block11 {
+  position: absolute;
+  top: -26%;
+  right: 1%;
+}
+.links {
+  position: relative;
+}
+.block12 {
+  position: absolute;
+  top: -17%;
+  right: 7%;
+  width: 6rem;
+}
+.block13 {
+  position: absolute;
+  top: 53%;
+  right: 3%;
+  width: 5rem;
+}
+.block14 {
+  position: absolute;
+  top: 16%;
+  left: 4%;
+  width: 8rem;
+}
+.block15 {
+  position: absolute;
+  top: 56%;
+  left: 1%;
+  width: 10rem;
+}
+.block16 {
+  position: absolute;
+  top: 8%;
+  right: 1%;
+  width: 4rem;
+}
+
+.block17 {
+  position: absolute;
+  top: 21%;
+  right: 3%;
+  width: 9rem;
+}
+.block18 {
+  position: absolute;
+  top: 62%;
+  right: -5%;
+  width: 9rem;
+}
+.block19 {
+  display: none;
+  position: absolute;
+  top: 22%;
+  left: 1%;
+  width: 4rem;
+}
+.block20 {
+  display: none;
+  position: absolute;
+  top: 83%;
+  left: 3%;
+  width: 4rem;
+}
+
+.block21 {
+  display: none;
+  position: absolute;
+  top: 67%;
+  right: 13%;
+  width: 4rem;
+}
+.block22 {
+  display: none;
+  position: absolute;
+  top: 78%;
+  right: 2%;
+  width: 8rem;
+}
+.block23 {
+  position: absolute;
+  top: 36%;
+  right: 9%;
+  width: 8rem;
+}
+.block24 {
+  position: absolute;
+  top: 18%;
+  right: 5%;
+}

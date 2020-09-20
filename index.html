@@ -7,6 +7,7 @@
     <title>Global School</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/svg.css" />
     <link rel="stylesheet" href="css/media-queries.css" />
     <script
       src="https://kit.fontawesome.com/b2c8fab18d.js"
@@ -17,45 +18,53 @@
     <header>
       <div class="header">
         <div class="container__top">
-          <a href="index.html">
-            <img class="logo" src="Images/logo.png" alt="logo"
-          /></a>
-          <a class="menu__li" href="index.html">Главная</a>
-          <a class="menu__li" href="#">Наша команда</a>
-          <a class="menu__li" href="#">Жизнь школы</a>
-          <a class="menu__li" href="#">Обращение директора</a>
-          <a class="menu__li" href="#">Как мы обучаем?</a>
-          <button class="white__button">Обратный звонок</button>
-          <button class="blue__button">Оплатить обучение</button>
-
-          <!--================menu burger =================-->
-
-          <div id="mySidenav" class="sidenav">
-            <ul id="menu">
-              <li class="nav-item">
-                <a
-                  href="javascript:void(0)"
-                  class="closebtn"
-                  onclick="closeNav()"
-                  >&times;</a
-                >
-              </li>
-              <a class="menu__li__burger" href="index.html">Главная</a>
-              <a class="menu__li__burger" href="#">Наша команда</a>
-              <a class="menu__li__burger" href="#">Жизнь школы</a>
-              <a class="menu__li__burger" href="#">Обращение директора</a>
-              <a class="menu__li__burger" href="#">Как мы обучаем?</a>
-            </ul>
+          <div class="container__top-flex container__top-flex__img">
+            <a href="index.html">
+              <img class="logo" src="Images/logo.png" alt="logo"
+            /></a>
           </div>
-          <span class="menu-open" onclick="openNav()"
-            ><i class="fas fa-bars"></i
-          ></span>
+          <div class="container__top-flex container__top-flex__menu">
+            <a class="menu__li" href="index.html">Главная</a>
+            <a class="menu__li" href="teachers.html">Наша команда</a>
+            <a class="menu__li" href="life.html">Жизнь школы</a>
+            <a class="menu__li" href="speech.html">Обращение директора</a>
+            <a class="menu__li" href="technique.html">Как мы обучаем?</a>
+
+            <button class="white__button">Обратный звонок</button>
+            <button class="blue__button">Оплатить обучение</button>
+          </div>
         </div>
+        <!--================menu burger =================-->
+
+        <div id="mySidenav" class="sidenav">
+          <ul id="menu">
+            <li class="nav-item"></li>
+            <a class="menu__li__burger" href="index.html">Главная</a>
+            <a class="menu__li__burger" href="teachers.html">Наша команда</a>
+            <a class="menu__li__burger" href="life.html">Жизнь школы</a>
+            <a class="menu__li__burger" href="speech.html"
+              >Обращение директора</a
+            >
+            <a class="menu__li__burger" href="technique.html"
+              >Как мы обучаем?</a
+            >
+          </ul>
+        </div>
+        <span class="menu-open" id="openBtn"
+          ><i class="fas fa-bars open"></i>
+        </span>
+        <span id="closeBtn" class="closebtn close">
+          <i class="fas fa-times"></i>
+        </span>
       </div>
     </header>
     <main>
       <div class="description__img">
-        <div class="description">
+        <div id="blackout" class="description">
+          <img class="block" src="images//svg/Polygon7.svg" alt="svg" />
+          <div class="block2"></div>
+          <div class="block3"></div>
+          <div class="block4"></div>
           <div class="container">
             <h1 class="description__h1">
               Добро пожаловать в <span class="blueColor">Global School!</span>
@@ -72,198 +81,229 @@
               дружной компании, где приоритетами являются качество знаний
               студентов и непрерывное развитие педагогов!
             </p>
+            <img class="block1" src="images//svg/Polygon7.svg" alt="svg" />
+            <img class="block5" src="images//svg/Polygon4.svg" alt="svg" />
 
-            <h4 class="description__h4">Мы предлагаем:</h4>
-            <ul>
-              <li class="description__li">
-                <p>
-                  Курсы английского языка для дошкольников, школьников и
-                  взрослых;
-                </p>
-              </li>
-              <li class="description__li">
-                <p>Подготовка к российским выпускным экзаменам ОГЭ и ЕГЭ;</p>
-              </li>
-              <li class="description__li">
-                <p>
-                  Подготовка к международной языковой аттестации: Cambridge
-                  Exams, IELTS, TOEFL;
-                </p>
-              </li>
-              <li class="description__li">
-                <p>
-                  Занятия в формате онлайн в индивидуальном и групповом формате;
-                </p>
-              </li>
-              <li class="description__li">
-                <p>Образовательные поездки за рубеж;</p>
-              </li>
-            </ul>
-
-            <form class="description__form" action="#" method="post">
-              <fieldset>
-                <legend class="description__form__legend">
-                  Готовы учиться с нами? Запишитесь со скидкой в пару кликов.
-                </legend>
-                <div class="description__form__flex">
-                  <input
-                    class="description__form__input"
-                    type="text"
-                    id="name"
-                    name="name"
-                    pattern="[A-Za-zА-Яа-яЁё]"
-                    placeholder="Ваше имя"
-                    required
-                  />
-                  <input
-                    class="description__form__input"
-                    type="tel"
-                    name="tel"
-                    pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}"
-                    placeholder="Ваш телефон"
-                    required
-                  />
-                  <button class="blue__button description__form__button">
-                    Записаться
-                  </button>
-                </div>
-              </fieldset>
-              <input
-                class="description__checkbox"
-                type="checkbox"
-                name="subscribe"
-                id="subscribe-field"
-                checked
-              />
-              <label for="subscribe-field"
-                >Я согласен на обработку предоставляемых мною персональных
-                данных и
-                <a class="blueColor">Условиями использования веб-сайта.</a>
-                С <a class="blueColor">Политикой “satename”</a> в отношении
-                обработки персональных данных ознакомлен.</label
-              >
-            </form>
+            <div class="description__flex-reverse">
+              <div>
+                <h4 class="description__h4">Мы предлагаем:</h4>
+                <ul>
+                  <li class="description__li">
+                    <p>
+                      Курсы английского языка для дошкольников, школьников и
+                      взрослых;
+                    </p>
+                  </li>
+                  <li class="description__li">
+                    <p>
+                      Подготовка к российским выпускным экзаменам ОГЭ и ЕГЭ;
+                    </p>
+                  </li>
+                  <li class="description__li">
+                    <p>
+                      Подготовка к международной языковой аттестации: Cambridge
+                      Exams, IELTS, TOEFL;
+                    </p>
+                  </li>
+                  <li class="description__li">
+                    <p>
+                      Занятия в формате онлайн в индивидуальном и групповом
+                      формате;
+                    </p>
+                  </li>
+                  <li class="description__li">
+                    <p>Образовательные поездки за рубеж;</p>
+                  </li>
+                </ul>
+              </div>
+              <form class="description__form" action="#" method="post">
+                <fieldset>
+                  <legend class="description__form__legend">
+                    Готовы учиться с нами? Запишитесь со скидкой в пару кликов.
+                  </legend>
+                  <div class="description__form__flex">
+                    <input
+                      class="description__form__input"
+                      type="text"
+                      id="name"
+                      name="name"
+                      pattern="[A-Za-zА-Яа-яЁё]"
+                      placeholder="Ваше имя"
+                      required
+                    />
+                    <input
+                      class="description__form__input"
+                      type="tel"
+                      name="tel"
+                      pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}"
+                      placeholder="Ваш телефон"
+                      required
+                    />
+                    <button class="blue__button description__form__button">
+                      Записаться
+                    </button>
+                  </div>
+                </fieldset>
+                <input
+                  class="description__checkbox"
+                  type="checkbox"
+                  name="subscribe"
+                  id="subscribe-field"
+                  checked
+                />
+                <label for="subscribe-field"
+                  >Я согласен на обработку предоставляемых мною персональных
+                  данных и
+                  <a class="blueColor">Условиями использования веб-сайта.</a>
+                  С <a class="blueColor">Политикой “satename”</a> в отношении
+                  обработки персональных данных ознакомлен.</label
+                >
+              </form>
+            </div>
           </div>
         </div>
       </div>
       <div class="benefits">
-        <div class="container">
-          <h2 class="benefits__h2">
-            Преимущества обучения <span class="blueColor">Global School</span>
-          </h2>
-          <p class="benefits__h3">
-            Подав заявку на обучение в наших школах, Вы гарантированно:
-          </p>
-          <div class="benefits__ul">
-            <div class="benefits__ul__top">
-              <div class="benefits__ul__li">
-                <div class="benefits__img">
-                  <img
-                    class="benefits__imgs"
-                    src="images/benefits/Vector.png"
-                    alt="vector"
-                  />
+        <img class="block6" src="images//svg/Polygon1.svg" alt="svg" />
+        <img class="block7" src="images//svg/Polygon4.svg" alt="svg" />
+        <img class="block8" src="images//svg/Polygon3.svg" alt="svg" />
+        <img class="block14" src="images//svg/Polygon4.svg" alt="svg" />
+        <img class="block15" src="images//svg/Polygon6.svg" alt="svg" />
+        <img class="block16" src="images//svg/Polygon7.svg" alt="svg" />
+        <img class="block19" src="images//svg/Polygon7.svg" alt="svg" />
+        <img class="block20" src="images//svg/Polygon7.svg" alt="svg" />
+        <img class="block21" src="images//svg/Polygon7.svg" alt="svg" />
+        <img class="block22" src="images//svg/Polygon6.svg" alt="svg" />
+
+        <img class="block17" src="images//svg/Polygon6.svg" alt="svg" />
+        <div class="container__overflow">
+          <img class="block18" src="images//svg/Polygon4.svg" alt="svg" />
+          <div class="container">
+            <h2 class="benefits__h2">
+              Преимущества обучения в
+              <span class="blueColor">Global School</span>
+            </h2>
+            <p class="benefits__h3">
+              Подав заявку на обучение в наших школах, Вы гарантированно:
+            </p>
+            <div class="benefits__ul">
+              <div class="benefits__ul__top">
+                <div class="benefits__ul__li">
+                  <div class="benefits__img">
+                    <img
+                      class="benefits__imgs"
+                      src="images/benefits/Vector.png"
+                      alt="vector"
+                    />
+                  </div>
+                  <p class="benefits__p">
+                    Будете обучаться только у <b>опытных специалистов</b>,
+                    любящих свое дело по учебным пособиям ведущих мировых
+                    издательств
+                  </p>
                 </div>
-                <p class="benefits__p">
-                  Будете обучаться только у опытных специалистов, любящих свое
-                  дело по учебным пособиям ведущих мировых издательств
-                </p>
+                <div class="benefits__ul__li">
+                  <div class="benefits__img">
+                    <img
+                      class="benefits__imgs"
+                      src="images/benefits/Vector1.png"
+                      alt="vector"
+                    />
+                  </div>
+                  <p class="benefits__p">
+                    Сможете на практике понять, как работают современные
+                    <b>эффективные методики обучения</b> иностранным языкам
+                  </p>
+                </div>
+                <div class="benefits__ul__li">
+                  <div class="benefits__img">
+                    <img
+                      class="benefits__imgs"
+                      src="images/benefits/Vector2.png"
+                      alt="vector"
+                    />
+                  </div>
+                  <p class="benefits__p">
+                    Точно <b>достигнете желаемых результатов</b> и получите
+                    удовольствие от обучения
+                  </p>
+                </div>
               </div>
-              <div class="benefits__ul__li">
-                <div class="benefits__img">
-                  <img
-                    class="benefits__imgs"
-                    src="images/benefits/Vector1.png"
-                    alt="vector"
-                  />
+              <div class="benefits__ul__bottom">
+                <div class="benefits__ul__li">
+                  <div class="benefits__img">
+                    <img
+                      class="benefits__imgs"
+                      src="images/benefits/Vector6.png"
+                      alt="vector"
+                    />
+                  </div>
+                  <p class="benefits__p">
+                    Будете пользоваться комплексом
+                    <b>бесплатных специальных предложений</b> от нашей школы
+                  </p>
                 </div>
-                <p class="benefits__p">
-                  Сможете на практике понять, как работают современные
-                  эффективные методики обучения иностранным языкам
-                </p>
-              </div>
-              <div class="benefits__ul__li">
-                <div class="benefits__img">
-                  <img
-                    class="benefits__imgs"
-                    src="images/benefits/Vector2.png"
-                    alt="vector"
-                  />
+                <div class="benefits__ul__li">
+                  <div class="benefits__img">
+                    <img
+                      class="benefits__imgs"
+                      src="images/benefits/Vector3.png"
+                      alt="vector"
+                    />
+                  </div>
+                  <p class="benefits__p">
+                    Получите качество услуг, соответствующее
+                    <b>международным стандартам</b>
+                  </p>
                 </div>
-                <p class="benefits__p">
-                  Точно достигнете желаемых результатов и получите удовольствие
-                  от обучения
-                </p>
+                <div class="benefits__ul__li">
+                  <div class="benefits__img">
+                    <img
+                      class="benefits__imgs"
+                      src="images/benefits/Vector4.png"
+                      alt="vector"
+                    />
+                  </div>
+                  <p class="benefits__p">
+                    Получите <b>помощь и поддержку</b> в случае сложностей с
+                    английским языком в общеобразовательной школе
+                  </p>
+                </div>
+                <div class="benefits__ul__li">
+                  <div class="benefits__img">
+                    <img
+                      class="benefits__imgs"
+                      src="images/benefits/Vector5.png"
+                      alt="vector"
+                    />
+                  </div>
+                  <p class="benefits__p">
+                    Будете учиться в <b>удобное для вас время</b> по комфортному
+                    графику
+                  </p>
+                </div>
               </div>
             </div>
-            <div class="benefits__ul__bottom">
-              <div class="benefits__ul__li">
-                <div class="benefits__img">
-                  <img
-                    class="benefits__imgs"
-                    src="images/benefits/Vector6.png"
-                    alt="vector"
-                  />
-                </div>
-                <p class="benefits__p">
-                  Будете пользоваться комплексом бесплатных специальных
-                  предложений от нашей школы
-                </p>
-              </div>
-              <div class="benefits__ul__li">
-                <div class="benefits__img">
-                  <img
-                    class="benefits__imgs"
-                    src="images/benefits/Vector3.png"
-                    alt="vector"
-                  />
-                </div>
-                <p class="benefits__p">
-                  Получите качество услуг, соответствующее международным
-                  стандартам
-                </p>
-              </div>
-              <div class="benefits__ul__li">
-                <div class="benefits__img">
-                  <img
-                    class="benefits__imgs"
-                    src="images/benefits/Vector4.png"
-                    alt="vector"
-                  />
-                </div>
-                <p class="benefits__p">
-                  Получите помощь и поддержку в случае сложностей с английским
-                  языком в общеобразовательной школе
-                </p>
-              </div>
-              <div class="benefits__ul__li">
-                <div class="benefits__img">
-                  <img
-                    class="benefits__imgs"
-                    src="images/benefits/Vector5.png"
-                    alt="vector"
-                  />
-                </div>
-                <p class="benefits__p">
-                  Будете учиться в удобное для вас время по комфортному графику
-                </p>
+            <div class="benefits__span-back">
+              <div class="benefits__span">
+                Уже более
+                <span class="benefits__span__bold"> 1500 студентов</span>
+                доверили нам свое обучение!
               </div>
             </div>
+            <p class="benefits__p__bottom">Присоединяйтесь!</p>
           </div>
-          <div class="benefits__span-back">
-            <div class="benefits__span">
-              Уже более
-              <span class="benefits__span__bold"> 1500 студентов</span> доверили
-              нам свое обучение!
-            </div>
-          </div>
-          <p class="benefits__p__bottom">Присоединяйтесь!</p>
         </div>
       </div>
     </main>
     <footer>
       <div class="form__bottom__img">
         <div class="form__bottom">
+          <img class="block9" src="images//svg/Polygon10.svg" alt="svg" />
+          <img class="block10" src="images//svg/Polygon14.svg" alt="svg" />
+          <img class="block11" src="images//svg/Polygon2.svg" alt="svg" />
+          <img class="block13" src="images//svg/Polygon14.svg" alt="svg" />
+
           <div class="container">
             <form action="#" method="post">
               <fieldset>
@@ -311,12 +351,84 @@
         </div>
       </div>
       <div class="links">
+        <img class="block12" src="images//svg/Polygon2.svg" alt="svg" />
+
         <div class="container__top">
           <div class="links__flex">
             <div class="links__left">
               <a href="index.html">
                 <img class="logo" src="Images/logo.png" alt="logo"
               /></a>
+              <div class="links__pc">
+                <div class="links__left__i">
+                  <a href="#"> <i class="fab fa-whatsapp"></i></a>
+                  <a href="#"> <i class="fab fa-instagram"></i></a>
+                  <a href="#"> <i class="fab fa-vk"></i></a>
+                  <a href="#"> <i class="fab fa-telegram-plane"></i></a>
+                  <a href="#"> <i class="fab fa-facebook-f"></i></a>
+                </div>
+                <div class="links__left__p">
+                  <a href="#"> Политика конфиденциальности</a>
+                </div>
+              </div>
+            </div>
+            <div class="links__flex__center">
+              <div class="links__center">
+                <div class="links__center__h">Меню</div>
+                <div class="links__center__line"></div>
+                <div class="links__center__ul">
+                  <a href="index.html">Главная</a>
+                  <a href="teachers.html">Наша команда</a>
+                  <a href="life.html">Жизнь школы</a>
+                  <a href="speech.html">Обращение директора</a>
+                  <a href="technique.html">Как мы обучаем?</a>
+                </div>
+                <div class="links__center__p">
+                  © 2020 Все права защищены by Global School
+                </div>
+              </div>
+              <div class="links__right">
+                <div class="links__right__h">Контакты</div>
+                <div class="links__center__line"></div>
+                <div class="links__right__location">
+                  <div class="links__right__location__address">
+                    <i class="fas fa-map-marker-alt"></i>
+                    355000 г. Ставрополь, ул. Тухачевского 12В
+                  </div>
+                  <div class="links__right__location__tel">
+                    <i class="fas fa-phone-alt"></i>
+                    <a class="tel" href="tel:+79614677171">
+                      +7 (961) 467-71-71
+                    </a>
+                  </div>
+                </div>
+                <div class="links__right__location">
+                  <div class="links__right__location__address">
+                    <i class="fas fa-map-marker-alt"></i>
+                    356240 г.Михайловск, ул. Ленина 161/5
+                  </div>
+                  <div class="links__right__location__tel">
+                    <i class="fas fa-phone-alt"></i>
+                    <a class="tel" href="tel:+79097594727">
+                      +7 (909) 759-47-27
+                    </a>
+                  </div>
+                </div>
+                <div class="links__right__location">
+                  <div class="links__right__location__address">
+                    <i class="fas fa-map-marker-alt"></i>
+                    356240 г. Михайловск, ул. Ишкова 123
+                  </div>
+                  <div class="links__right__location__tel">
+                    <i class="fas fa-phone-alt"></i>
+                    <a class="tel" href="tel:+79620041801">
+                      +7 (962) 004-18-01
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="links__phone">
               <div class="links__left__i">
                 <a href="#"> <i class="fab fa-whatsapp"></i></a>
                 <a href="#"> <i class="fab fa-instagram"></i></a>
@@ -324,62 +436,13 @@
                 <a href="#"> <i class="fab fa-telegram-plane"></i></a>
                 <a href="#"> <i class="fab fa-facebook-f"></i></a>
               </div>
-              <div class="links__left__p">
+            </div>
+            <div class="links__p-phone">
+              <div class="links__left__p-phone">
                 <a href="#"> Политика конфиденциальности</a>
               </div>
-            </div>
-            <div class="links__center">
-              <div class="links__center__h">Меню</div>
-              <div class="links__center__line"></div>
-              <div class="links__center__ul">
-                <a href="index.html">Главная</a>
-                <a href="#">Наша команда</a>
-                <a href="#">Жизнь школы</a>
-                <a href="#">Обращение директора</a>
-                <a href="#">Как мы обучаем?</a>
-              </div>
-              <div class="links__center__p">
+              <div class="links__center__p-phone">
                 © 2020 Все права защищены by Global School
-              </div>
-            </div>
-            <div class="links__right">
-              <div class="links__right__h">Мы в социальных сетях</div>
-              <div class="links__center__line"></div>
-              <div class="links__right__location">
-                <div class="links__right__location__address">
-                  <i class="fas fa-map-marker-alt"></i>
-                  355000 г. Ставрополь, ул. Тухачевского 12В
-                </div>
-                <div class="links__right__location__tel">
-                  <i class="fas fa-phone-alt"></i>
-                  <a class="tel" href="tel:+79614677171">
-                    +7 (961) 467-71-71
-                  </a>
-                </div>
-              </div>
-              <div class="links__right__location">
-                <div class="links__right__location__address">
-                  <i class="fas fa-map-marker-alt"></i>
-                  356240 г.Михайловск, ул. Ленина 161/5
-                </div>
-                <div class="links__right__location__tel">
-                  <i class="fas fa-phone-alt"></i>
-                  <a class="tel" href="tel:+79097594727">
-                    +7 (909) 759-47-27
-                  </a>
-                </div>
-              </div>
-              <div class="links__right__location">
-                <div class="links__right__location__address">
-                  <i class="fas fa-map-marker-alt"></i>
-                  356240 г. Михайловск, ул. Ишкова 123
-                </div>
-                <div class="links__right__location__tel">
-                  <i class="fas fa-phone-alt"></i>
-                  <a class="tel" href="tel:+79620041801">
-                    +7 (962) 004-18-01
-                  </a>
-                </div>
               </div>
             </div>
           </div>

@@ -31,11 +31,14 @@ button,
 a {
   cursor: pointer;
 }
+@font-face {
+  font-family: Ubuntu;
+  src: url(fonts/Ubuntu);
+}
 
 body {
   font-size: 14px;
-  /* font-family: "Quicksand", sans-serif; */
-  background-color: ##e5e5e5;
+  font-family: "Ubuntu", sans-serif;
   background-size: cover;
   background-position: top center;
   color: black;
