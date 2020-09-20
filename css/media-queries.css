@@ -298,7 +298,7 @@
     margin-right: 5%;
   }
   .sidenav {
-    top: 155px;
+    top: 144px;
   }
 }
 
@@ -380,5 +380,10 @@
   .block21,
   .block22 {
     display: none;
+  }
+}
+@media (max-width: 332px) {
+  .sidenav {
+    top: 158px;
   }
 }
