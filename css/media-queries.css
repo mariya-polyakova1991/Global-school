@@ -264,7 +264,7 @@
     top: -13%;
   }
   .block11 {
-    top: -8%;
+    top: -7%;
   }
   .block14 {
     top: 59%;
@@ -380,6 +380,9 @@
   .block21,
   .block22 {
     display: none;
+  }
+  .block11 {
+    top: -6%;
   }
 }
 @media (max-width: 332px) {

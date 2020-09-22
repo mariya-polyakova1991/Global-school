@@ -51,6 +51,7 @@
 }
 .benefits {
   position: relative;
+  object-fit: fill;
 }
 .container__overflow {
   position: relative;
@@ -63,7 +64,7 @@
 }
 .block7 {
   position: absolute;
-  top: -6.5%;
+  top: -6%;
   right: 4%;
   width: 8rem;
 }
@@ -178,4 +179,7 @@
   position: absolute;
   top: 18%;
   right: 5%;
+}
+img[class^="block"] {
+  object-fit: contain;
 }
